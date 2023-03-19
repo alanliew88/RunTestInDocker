@@ -7,6 +7,6 @@ First, we start off with pulling a docker image using :
 
 Then, we run a docker container using the docker image :
 
-` docker run -d -p 4444:4444 --name testagain2 seleniarm/standalone-chromium  `
+` docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g"  --name testagain2 seleniarm/standalone-chromium  `
 
 Lastly, we run the test using normal method.(right click and run)
